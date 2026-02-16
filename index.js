@@ -1,6 +1,11 @@
 console.log('Hello, World!')
-const express = require('express')
+const express = require('express');
+const connectDB = require('./db/db');
 const app = express();
+
+
+connectDB();
+
 const PORT = 5000;
 
 
